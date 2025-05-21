@@ -1,0 +1,288 @@
+/* Global Styles */
+    body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+    
+    }
+    
+
+    h2, h3, h4 {
+    margin-bottom: 20px;
+    }
+
+    p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .home-hero {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 0%;
+    font-family: 'Playfair Display', serif;
+    
+    
+    }
+
+    .hero-content {
+    background-color: rgba(244, 239, 239, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    }
+
+    .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #131314; /* Light color for better contrast */
+    }
+
+    .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    }
+
+    .cta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-btn:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+    }
+
+    /* Vision Section */
+    .vision-section {
+    padding: 60px 20px;
+   background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    text-align: center;
+    
+    }
+
+    .vision-section h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    margin-bottom: 20px;
+    color: #0c0c0c;                    /* our vision text colour */
+    }
+
+    .vision-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    }
+
+    /* Services Section */
+    .services-section {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    text-align: center;
+    }
+
+    .services-section h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    color: #333;
+    
+    }
+
+    .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .service-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+    transform: translateY(-8px);
+    }
+
+    .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #008080;
+    }
+
+    .service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    }
+
+    /* Portfolio Section */
+
+      .portfolio-preview{
+        padding: 30px 20px;
+     background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    }
+
+    .center-heading {
+    text-align: center;
+    font-size: 2.5rem; /* Optional: consistent styling */
+    color: #333;        /* Optional: match your theme */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    }
+
+    .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px;
+    margin-top: 20px;
+    }
+
+    .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    }
+
+    .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .portfolio-item:hover img {
+    transform: scale(1.1);
+    }
+
+    .portfolio-item p {
+    position: absolute;
+    bottom: 10px;
+    margin-top: 1;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    
+    }
+
+    .portfolio-item:hover p {
+    opacity: 0.8; /* Slightly transparent text on hover */
+    }
+
+    /* Testimonials Section */
+
+    .testimonials-section {
+    padding: 60px 20px;
+     background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    }
+
+    .testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    }
+
+    .testimonials-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+    .testimonial-card {
+    background-color:  #F5F5DC;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .testimonial-card:hover {
+    transform: scale(1.05);
+    }
+
+    .testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #111211;
+    }
+
+    .testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    }
+
+    .client-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    }
+
+    .client-role {
+    font-size: 1rem;
+    color: #777;
+    }
+
+    .vision-section {
+    padding: 60px 20px;
+    background-color: #F5F5DC; /* our vision backgraound colour */          
+    color: white;
+    text-align: center;
+    }
+
+    .vision-section h2 {    
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+
+    .vision-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    }

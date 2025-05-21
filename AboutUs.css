@@ -1,0 +1,309 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px 20px;
+    background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Intro Text */
+.about-us .intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us .intro h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-us .intro p {
+    font-size: 1.1rem;
+    color: #777;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+/* Style for Mission and Story Images */
+.about-us .mission img,
+.about-us .story img {
+    width: 500px;  /* Set a fixed size for images */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-bottom: 20px;
+}
+
+/* Hover Effect */
+.about-us .mission img:hover,
+.about-us .story img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Mission and Story Sections */
+.about-us .mission,
+.about-us .story {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items properly */
+    padding: 0 20px;
+}
+
+/* Mission & Story Text Styles */
+.about-us .mission div,
+.about-us .story div {
+    flex: 1;
+}
+
+.about-us .mission h3,
+.about-us .story h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.about-us .mission p,
+.about-us .story p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 600px;  /* Fix paragraph width */
+}
+
+/* Our Story Section - Image on the right */
+.our-story {
+    display: flex;
+    justify-content: flex-start; /* Align left */
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #f7f7f7;  /* Light background */
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Ensure text is on the left and image is on the right */
+/* Story Section: Image on the right */
+.about-us .story {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align left */
+    padding: 0 20px;
+    flex-direction: row-reverse; /* This makes the image appear on the right */
+}
+
+/* Story Section: Styling for Image */
+.about-us .story img {
+    width: 500px; /* Set the image width */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-bottom: 20px;
+}
+
+/* Story Section: Text Alignment */
+.about-us .story div {
+    flex: 1;
+    text-align: left;
+}
+
+.about-us .story h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.about-us .story p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 600px; /* Fix paragraph width */
+}
+
+.our-story .content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.our-story h2 {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.our-story p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.our-story img {
+    width: 500px; /* Increase image size */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    align-items: right;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us .mission,
+    .about-us .story {
+        flex-direction: column; /* Stack image and text on small screens */
+        text-align: center;
+    }
+
+    .about-us .mission img,
+    .about-us .story img {
+        width: 80%;  /* Reduce image size on smaller screens */
+    }
+
+    .our-story {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+         text-align: left;
+    }
+
+    .our-story img {
+        width: 80%; /* Resize image on mobile */
+        
+    }
+}
+
+/* Team Section */
+.team {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.team h3 {
+    font-size: 2.5rem; /* Adjusted font size for consistency */
+    margin-bottom: 40px; /* Space below the heading */
+    font-family: 'Playfair Display', serif; /* Same font as About Us */
+    font-weight: 600; /* Medium weight for boldness */
+    color: #333; /* Dark color for text */
+    text-transform: uppercase; /* Uppercase for the heading */
+    letter-spacing: 2px; /* Adds space between letters */
+    text-align: center; /* Center-align the heading */
+}
+
+
+
+
+.team-members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.team-member.reverse {
+    flex-direction: row-reverse;
+}
+
+.team-member img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+}
+
+.member-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.member-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.member-info h4 span {
+    font-weight: normal;
+    color: #888;
+    font-size: 1rem;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: white;
+    background-color: #007bff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .about-us .mission,
+    .about-us .story,
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member-info {
+        text-align: center;
+    }
+}

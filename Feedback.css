@@ -1,0 +1,162 @@
+/* .feedback-section {
+  position: relative;
+  background: url('../assets/Compact Studio Apartment.jpg') no-repeat center center/cover;
+  padding: 60px 20px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.feedback-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.alert-success {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+}
+*/
+/* Layout */
+/* Full page section */
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff5e6, #f2f2f2); /* soft pastel tones */
+  padding: 40px 20px;
+}
+
+/* Background overlay box */
+.feedback-overlay {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* Title */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2d80b4;
+}
+
+/* Success message */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .feedback-overlay {
+    padding: 25px;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+}

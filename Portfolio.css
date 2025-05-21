@@ -1,0 +1,112 @@
+.portfolio-container {
+  padding: 20px 20px;
+  background: linear-gradient(to bottom right, #fff5e6, #f2f2f2);
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  text-align: center;
+  font-size: 01rem;
+  font-weight: 700;
+   margin-top: 0%;
+   margin-bottom: 0rem;
+}
+#heading{
+   font-size: 3.0rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;    
+   }
+
+.filter-bar {
+  margin-bottom: 1.5rem;
+}
+
+.design-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.design-section {
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.design-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.design-section.basic {
+  background-color: #e0f7fa;
+}
+
+.design-section.standard {
+  background-color: #fff9c4;
+}
+
+.design-section.premium {
+  background-color: #d0f8ce;
+}
+
+.design-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.design-card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: black;
+}
+
+.design-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.design-card p {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  margin: 5px 0;
+}
+
+.design-card .price {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+.design-card .package {
+  color: #2e8b57;
+}
+
+.design-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  margin: 0.8rem 0 0.4rem;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+}
+
+button:hover {
+  background-color: #45a049;
+}

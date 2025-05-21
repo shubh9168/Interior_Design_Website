@@ -1,0 +1,108 @@
+/* Login Page Container */
+.login-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff5e6, #f2f2f2); /* soft pastel tones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Inner Box (like the contact-form-section) */
+.login-box {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Image Section */
+.login-image-section {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(to right, #fff5e6, #f2f2f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Section */
+.login-form-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background: linear-gradient(to right, #fff5e6, #f2f2f2);
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit Button */
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b78b4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #2c80b4;
+}
+
+/* Optional Footer Text */
+.login-form p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .login-image-section {
+    height: 200px;
+  }
+}
