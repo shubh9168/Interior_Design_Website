@@ -1,91 +1,12 @@
-# Interior_Design_Website
-A mini full-stack social media web application built using the MERN stack (MySQL, Express.js, React.js, Node.js). This project demonstrates user authentication, image upload, and CRUD operations for posts.
-# 🌐 Full-Stack Social Media Mini Project (MySQL + Express + React)
+# React + Vite
 
-This is a full-stack social media web application developed using **React.js** on the frontend and **Node.js + Express.js + MySQL** on the backend. It includes secure user authentication, post creation, and CRUD operations through RESTful APIs.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🚀 Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- ✅ User Registration & Login
-- 🔐 JWT Authentication
-- 📝 Create, Update, Delete Users and Feedback
-- 🖼️ Image Upload Support (if implemented)
-- 🧩 RESTful API Architecture
-- 🌍 Responsive React Frontend
+## Expanding the ESLint configuration
 
----
-
-## 🛠️ Tech Stack
-
-| Layer      | Tech                        |
-|------------|-----------------------------|
-| Frontend   | React.js, Tailwind CSS      |
-| Backend    | Node.js, Express.js         |
-| Database   | MySQL                       |
-| Auth       | JWT (JSON Web Tokens)       |
-| Uploads    | Multer (optional)           |
-| Dev Tools  | Nodemon, dotenv             |
-
-## 📁 Project Structure
-project-root/
-│
-├── backend/
-│ ├── db.js # MySQL connection setup
-│ ├── middleware/ # JWT authentication
-│ ├── routes/ # Auth, Feedback, and other APIs
-│ └── index.js # App entry
-│
-├── frontend/ # React app
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.js
-│ │ └── index.js
-
-🗄️ Database Setup (MySQL)
-sql
-
-CREATE DATABASE your_database_name;
-
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
-  email VARCHAR(255) UNIQUE,
-  password VARCHAR(255)
-);
-
-CREATE TABLE contacts (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  email VARCHAR(100) NOT NULL,
-  message TEXT NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE feedbacks (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT, -- Optional: FK to users table
-  message TEXT NOT NULL,
-  rating INT,  -- Optional: 1-5 star system
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
-);
-
-
-🔧 Backend Setup
-cmd
-cd backend
-npm install
-npm start
-
-💻 Frontend Setup
-vs code terminal
-cd frontend
-npm install
-npm run dev
-
-App runs on http://localhost:5173/, backend on http://localhost:5000
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
