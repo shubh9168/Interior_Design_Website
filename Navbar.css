@@ -1,0 +1,78 @@
+/* Base navbar */
+.navbar {
+  background-color: #1f1f1f; /* Dark background */
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Brand + logo wrapper */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Logo image */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffc107; /* Highlight color */
+}
+
+/* Logout button */
+.navbar-nav .btn {
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 8px 0;
+  }
+
+  .navbar-brand span {
+    font-size: 1.25rem;
+  }
+
+  .navbar-brand img {
+    height: 36px;
+  }
+}
+.navbar-brand img {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+

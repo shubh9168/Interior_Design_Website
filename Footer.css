@@ -1,0 +1,21 @@
+/* Footer Styles */
+footer {
+  background-color: #d61313; /* Dark background for footer */
+  color: white; /* Set text color to white */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #28a745; /* Green color for footer links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f1f1f1; /* Change link color on hover */
+}
